@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivFilterLayout"
+        android:scrollbars="none"
+        android:background="@android:color/white"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlNone"
+            android:padding="10dp"
+            android:clickable="true"
+            android:onClick="colorEffectFilter">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_cancel"
+                android:id="@+id/ivEffectNone"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None"
+                android:textSize="14sp"
+                android:layout_below="@id/ivEffectNone"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlAqua"
+                android:padding="10dp"
+                android:onClick="colorEffectFilter"
+                android:clickable="true">
+                
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_drop"
+                    android:id="@+id/ivEffectAqua"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aqua"
+                    android:textSize="14sp"
+                    android:layout_below="@id/ivEffectAqua"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="colorEffectFilter"
+                android:clickable="true"
+                android:id="@+id/rlMono">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_filter"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/ivMono"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mono"
+                    android:textSize="14sp"
+                    android:layout_below="@id/ivMono"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlNegative"
+                android:layout_margin="10dp"
+                android:onClick="colorEffectFilter"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_film"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/ivNegative"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negative"
+                    android:textSize="14sp"
+                    android:layout_below="@id/ivNegative"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlPosterized"
+                android:layout_margin="10dp"
+                android:onClick="colorEffectFilter"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_poster"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/ivPosterized"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posterized"
+                    android:textSize="14sp"
+                    android:layout_below="@id/ivPosterized"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlSepia"
+                android:layout_margin="10dp"
+                android:onClick="colorEffectFilter"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_gold_medal"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/ivSepia"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sepia"
+                    android:textSize="14sp"
+                    android:layout_below="@id/ivSepia"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
